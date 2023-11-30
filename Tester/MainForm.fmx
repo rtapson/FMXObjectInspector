@@ -1,0 +1,93 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 800
+  ClientWidth = 944
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object VertScrollBox1: TVertScrollBox
+    Position.X = 10.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 377.000000000000000000
+    Size.Height = 497.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 377.000000000000000000
+    Viewport.Height = 497.000000000000000000
+    object StringGrid1: TStringGrid
+      Align = Left
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 153.000000000000000000
+      Size.Height = 497.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      RowHeight = 20.000000000000000000
+      RowCount = 10
+      Options = [RowLines, RowSelect]
+      Viewport.Width = 149.000000000000000000
+      Viewport.Height = 493.000000000000000000
+      object StringColumn1: TStringColumn
+        HeaderSettings.TextSettings.WordWrap = False
+        Size.Width = 149.000000000000000000
+      end
+    end
+    object Splitter1: TSplitter
+      Align = Left
+      Cursor = crHSplit
+      MinSize = 20.000000000000000000
+      Position.X = 153.000000000000000000
+      Size.Width = 8.000000000000000000
+      Size.Height = 497.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'splitterstyle'
+    end
+    object GridPanelLayout1: TGridPanelLayout
+      Align = Client
+      Size.Width = 216.000000000000000000
+      Size.Height = 497.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      ColumnCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Button1
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          SizeStyle = Absolute
+          Value = 20.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 20.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 20.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+          Value = 100.000000000000000000
+        end>
+      object Button1: TButton
+        Align = Contents
+        Size.Width = 216.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Button1'
+        TextSettings.Trimming = None
+      end
+    end
+  end
+end
